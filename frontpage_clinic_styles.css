@@ -1,0 +1,493 @@
+.header {
+    width: 100%;
+    background: url("images/header_bg1980.png") center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_menu {
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_icon {
+    margin-right: 20px;
+}
+
+.page_title {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4388CC;
+}
+
+.navmenu {
+    width: 100%;
+    height: auto;
+    background-color: #4388CC;
+}
+
+.second_menu {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #2D638b;
+}
+
+.navmenu_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navmenu_point {
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+
+.navmenu_link,
+.second_menu_link {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+}
+
+.navmenu_link:hover {
+    background-color: #FFFFFF;
+    color: #4388CC;
+}
+
+.second_menu_link:hover {
+    background-color: #FFFFFF;
+    color: #2D638b;
+}
+
+/* подменю */
+
+.navmenu_point:hover .submenu,
+.navmenu_point:hover .submenu2 {
+    visibility: visible;
+    opacity: 1;
+    transition: 1000ms;
+}
+
+/* субменю ИНСТИТУТ */
+
+.submenu {
+    width: 1200px;
+    height: auto;
+    padding: 20px;
+
+    position: absolute; 
+    visibility: hidden;
+    opacity: 0.5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    background-color: #4388CC;
+    color: #FFFFFF;
+
+    transform-origin: 0 0;
+    z-index: 1;
+}
+
+.submenu2 {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    position: absolute; 
+    visibility: hidden;
+    opacity: 0.5;
+
+    background-color: #2D638B;
+    color: #FFFFFF;
+
+    /* transform-origin: center top; */
+    transform: translateX(-33%);
+    z-index: 1;
+}
+
+.first_list,
+.second_list,
+.third_list {
+    list-style: none;
+    text-align: center;
+}
+
+.first_list_point,
+.second_list_point,
+.third_list_point {
+    text-decoration: none;
+}
+
+.first_list_link,
+.second_list_link,
+.third_list_link {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.first_list_link:hover,
+.second_list_link:hover,
+.third_list_link:hover {
+    color: #4388CC;
+    background-color: #ffffff;
+}
+
+.inst {
+    top: 40px;
+    left: 0;
+}
+
+.science {
+    top: 40px;
+    left: -120px;
+}
+
+.gripp {
+    top: 40px;
+    left: -220px;
+}
+
+.education {
+    top: 40px;
+    left: -440px;
+}
+
+.dissovet {
+    top: 40px;
+    left: -600px;
+}
+
+.clinic {
+    top: 40px;
+    left: -720px;
+}
+
+.contacts {
+    top: 40px;
+    left: -1050px;
+}
+
+/* Отключаемый баннер */
+
+.banner_emergency {
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    background-color: #4c4c4c;
+}
+
+.banner_emergency_text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 150px;
+}
+
+/* Блок руководство */
+.executive {
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.executive_description {
+    text-align: center;
+}
+
+.executive_contacts {
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+/* Отделения */
+
+.departments {
+    width: 100%;
+}
+
+.departments_title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #4388CC;
+    text-transform: uppercase;
+}
+
+.departments_list {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.department {
+    font-size: 1.25rem;
+    width: 450px;
+    height: 75px;
+    background-color: #4388CC;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px;
+    line-height: 40px;
+}
+
+.info {
+    margin: 50px auto;
+}
+
+/* Работа клиники */
+
+.work {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.work_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    color:#4388CC;
+}
+
+.work_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work_link {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.work_subtitle {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4388CC;
+}
+
+.work_link:hover .work_subtitle {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-bottom: 2px solid #4388CC;
+}
+
+.work_submenu {
+    position: absolute;
+    background-color: #b1a3a3;
+    left: 0;
+    width: 100%;
+    height: 660px;
+    margin: 0 auto;
+    display: none;
+    z-index: 1;
+
+}
+
+.work_link:hover .work_submenu {
+    display: block;
+}
+
+.subimage {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.subtext {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Деятельность института */
+
+.influenza_work {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.influenza_work_wrapper {
+    margin: 0 auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.influenza_work_title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4388CC;
+    text-align: center;
+}
+
+.influenza_work_gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Карточки */
+
+.card {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_image {
+    margin-bottom: 20px;
+}
+
+.card_description {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4388CC;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #a2bbd4;
+}
+
+/* баннер */
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #4c4c4c;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+/* футер */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #4388CC;
+    position: relative;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.map,
+.contacts,
+.route,
+.footer_contacts {
+    width: 23%;
+    height: auto;
+}
+
+.contacts_title,
+.route_title,
+.footer_title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contacts_text,
+.route_text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.footer_list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer_link {
+    text-decoration: none;
+    display: block;
+    margin: 3px;
+    padding: 2px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer_link:hover {
+    color: #4388CC;
+    background-color: #FFFFFF;
+}
+
+.social {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+
+    width: 425px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

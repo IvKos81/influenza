@@ -1,0 +1,317 @@
+.header {
+    width: 100%;
+    background: url("images/header_bg1980.png") center no-repeat;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_menu {
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_icon {
+    margin-right: 20px;
+}
+
+.navmenu {
+    width: 100%;
+    height: auto;
+    background-color: #4388CC;
+}
+
+.navmenu_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navmenu_point {
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+
+.navmenu_link {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+}
+
+.navmenu_link:hover {
+    background-color: #FFFFFF;
+    color: #4388CC;
+}
+
+/* подменю */
+
+.navmenu_point:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transition: 500ms;
+}
+
+/* субменю ИНСТИТУТ */
+
+.submenu {
+    width: 1200px;
+    height: auto;
+    padding: 20px;
+
+    position: absolute; 
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    background-color: #4388CC;
+    color: #FFFFFF;
+
+    transform-origin: 0 0;
+}
+
+.first_list,
+.second_list,
+.third_list {
+    list-style: none;
+    text-align: center;
+}
+
+.first_list_point,
+.second_list_point,
+.third_list_point {
+    text-decoration: none;
+}
+
+.first_list_link,
+.second_list_link,
+.third_list_link {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.first_list_link:hover,
+.second_list_link:hover,
+.third_list_link:hover {
+    color: #4388CC;
+    background-color: #ffffff;
+}
+
+.inst {
+    top: 40px;
+    left: 0;
+}
+
+.science {
+    top: 40px;
+    left: -120px;
+}
+
+.gripp {
+    top: 40px;
+    left: -220px;
+}
+
+.education {
+    top: 40px;
+    left: -440px;
+}
+
+.dissovet {
+    top: 40px;
+    left: -600px;
+}
+
+.clinic {
+    top: 40px;
+    left: -720px;
+}
+
+.contacts {
+    top: 40px;
+    left: -1050px;
+}
+
+
+
+/* Деятельность института */
+
+.influenza_work {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.influenza_work_wrapper {
+    margin: 0 auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.influenza_work_title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4388CC;
+    text-align: center;
+}
+
+.influenza_work_gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_clinic {
+    text-decoration: none;
+}
+
+.link_clinic:hover {
+    transform: scale(1.1);
+}
+
+
+/* Карточки */
+
+.card {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_image {
+    margin-bottom: 20px;
+}
+
+.card_description {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4388CC;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #a2bbd4;
+}
+
+/* баннер */
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #4c4c4c;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+/* футер */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #4388CC;
+    position: relative;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.map,
+.contacts,
+.route,
+.footer_contacts {
+    width: 23%;
+    height: auto;
+}
+
+.contacts_title,
+.route_title,
+.footer_title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contacts_text,
+.route_text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.footer_list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer_link {
+    text-decoration: none;
+    display: block;
+    margin: 3px;
+    padding: 2px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer_link:hover {
+    color: #4388CC;
+    background-color: #FFFFFF;
+}
+
+.social {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+
+    width: 425px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
